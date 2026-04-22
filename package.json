@@ -5,7 +5,7 @@
   "scripts": {
     "generate:routes": "npm exec litoho -- generate routes --root .",
     "dev": "npm exec litoho -- dev --root .",
-    "build": "npm exec litoho -- build --root .",
+    "build": "litoho build --root .",
     "start": "NODE_ENV=production tsx server.ts"
   },
   "dependencies": {

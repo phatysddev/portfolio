@@ -29,7 +29,8 @@ pipeline {
       steps {
         sh 'node --version'
         sh 'npm --version'
-        sh 'npm ci --include=dev'
+        sh 'npm config set optional true'
+        sh 'npm ci --include=dev --include=optional'
       }
     }
 
