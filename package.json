@@ -6,20 +6,20 @@
     "generate:routes": "npm exec litoho -- generate routes --root .",
     "dev": "npm exec litoho -- dev --root .",
     "build": "npm exec litoho -- build --root .",
-    "start": "npm exec litoho -- start --root ."
+    "start": "NODE_ENV=production tsx server.ts"
   },
   "dependencies": {
     "@litoho/app": "0.1.4",
     "@litoho/core": "0.1.4",
     "@litoho/server": "0.1.4",
     "@litoho/ui": "0.1.4",
-    "lit": "^3.2.0"
+    "lit": "^3.2.0",
+    "tsx": "^4.19.2"
   },
   "devDependencies": {
     "@tailwindcss/vite": "^4.1.11",
     "litoho": "0.1.4",
     "tailwindcss": "^4.1.11",
-    "tsx": "^4.19.2",
     "typescript": "^5.8.3",
     "vite": "^5.4.19"
   }
