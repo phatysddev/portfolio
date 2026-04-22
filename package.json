@@ -3,9 +3,9 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "generate:routes": "npm exec litoho -- generate routes --root .",
+    "generate:routes": "litoho generate routes --root .",
     "dev": "npm exec litoho -- dev --root .",
-    "build": "litoho build --root .",
+    "build": "npm run generate:routes && vite build",
     "start": "NODE_ENV=production tsx server.ts"
   },
   "dependencies": {
